@@ -17,6 +17,7 @@ export class GameMainComponent implements OnInit{
 
    gameInfo : Info | undefined
 
+
   constructor(private activatedRoute :ActivatedRoute, private router:Router, private gameService: GameService, private authService: AuthService){
     this.lobbyCode = activatedRoute.snapshot.params.lobbyCode
   }
@@ -34,7 +35,7 @@ export class GameMainComponent implements OnInit{
   }
 
   canSelect():boolean{
-    return  this.authService?.user?.username == this.gameInfo?.king
+    return  this.authService?.user?.username == this.gameInfo?.king && this.gameInfo?.selectedForAdventure.length  == 0
   }
 
   canGoOnAdventure():boolean{
@@ -45,6 +46,10 @@ export class GameMainComponent implements OnInit{
 
   character(){
     this.router.navigate(['gamemmain/' + this.lobbyCode + '/character'])
+  }
+
+  select(){
+    this.router.navigate(['gamemmain/' + this.lobbyCode + '/select'])
   }
 
 }

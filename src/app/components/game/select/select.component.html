@@ -1,1 +1,25 @@
-<p>select works!</p>
+<div class="container">
+  <div class="select">
+    Select <strong> {{ this.gameInfo?.playerSelectNum }}</strong> players
+  </div>
+  <div class="selected-count">
+    Currently <strong> {{ count }}</strong> selected
+  </div>
+  <div *ngFor="let item of gameInfo?.playersName; index as i">
+    <label for="{{ item }}">{{ item }}</label>
+    <input
+      type="checkbox"
+      name="{{ item }}"
+      id="{{ item }}"
+      (change)="changed($event); values[i].checked = !values[i].checked"
+      [checked]="values[i].checked"
+    />
+  </div>
+  <div *ngIf="count != this.gameInfo?.playerSelectNum">
+    Select the right amount of people!
+  </div>
+  <div class="buttons">
+    <button class="back" (click)="back()">Back</button>
+    <button class="select" (click)="select()">Select</button>
+  </div>
+</div>

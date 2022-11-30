@@ -18,7 +18,7 @@
   <div class="buttons">
     <button  class="vote" *ngIf="canVote()">Vote</button>
     <button class="adventure-vote" *ngIf="canGoOnAdventure()">Adventure</button>
-    <button class="select" *ngIf="canSelect()">Select</button>
+    <button class="select" *ngIf="canSelect()" (click)="select()" >Select</button>
     <button class="caracter" (click)="character()">Character</button>
   </div>
 </div>
