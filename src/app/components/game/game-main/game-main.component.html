@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="lobby-code">
+    {{ lobbyCode | uppercase }}
+  </div>
+  <div class="scores" >
+    <div class="scores-bubble" *ngFor="let score of gameInfo?.scores ?? []" [ngSwitch]="score" >
+        <span class="undecided" *ngSwitchCase="'UNDECIDED'">
+        </span>
+        <span class="evil" *ngSwitchCase="'EVIL'">
+        </span>
+        <span class="good" *ngSwitchCase="'GOOD'">
+        </span>
+    </div>
+  </div>
+  <div class="king">
+   <p>King :  </p><strong>{{gameInfo?.king}}</strong>
+  </div>
+  <div class="buttons">
+    <button  class="vote" *ngIf="canVote()">Vote</button>
+    <button class="adventure-vote" *ngIf="canGoOnAdventure()">Adventure</button>
+    <button class="select" *ngIf="canSelect()">Select</button>
+    <button class="caracter" (click)="character()">Character</button>
+  </div>
+</div>

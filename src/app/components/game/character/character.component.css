@@ -1,0 +1,36 @@
+.container
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+
+.image-placeholder{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40%;
+  width: 100%;
+}
+.character-name{
+  height: 10%;
+}
+.sees{
+  height: 20%;
+}
+.buttons{
+  height: 30%;
+}
+
+
+.image{
+  display: inline-block;
+  height: 15rem;
+  background-color: red;
+  width: 15rem;
+  border-radius: 10rem;
+}

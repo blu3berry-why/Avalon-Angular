@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="image-placeholder">
+    <span class="image"></span>
+  </div>
+  <div class="character-name">{{character?.name}}</div>
+  <div class="sees">{{character?.sees}}</div>
+  <div class="buttons">
+    <button (click)="back()">Back</button>
+    <button *ngIf="character?.name == 'ASSASSIN'">Guess</button>
+  </div>
+</div>

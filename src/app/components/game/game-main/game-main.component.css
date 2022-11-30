@@ -1,0 +1,62 @@
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+.lobby-code{
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scores{
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.king{
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons{
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+span{
+  display: inline-block;
+  height: 6rem;
+  width: 6rem;
+  border-radius: 3rem;
+  background-color: aqua;
+}
+
+.scores-bubble{
+  margin:0 20px;
+}
+
+.good{
+  background-color: rgb(0, 119, 255);
+}
+
+.undecided{
+  background-color: #777;
+}
+
+.evil{
+  background-color: rgb(236, 119, 10);
+}
+
