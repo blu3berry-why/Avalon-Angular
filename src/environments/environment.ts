@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  url: "localhost:8080/"
+  url: "http://localhost:4200/"
+ /*url: "https://ktor-avalon-rest.herokuapp.com/"*/
 };
 
 /*

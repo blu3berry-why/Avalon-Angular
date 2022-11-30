@@ -1,10 +1,11 @@
 import { HttpClient } from '@angular/common/http';
-import { Message } from '@angular/compiler/src/i18n/i18n_ast';
+
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
 import { AssassinGuess } from '../model/AssassinGuess';
 import { CharacterInfo } from '../model/CharacterInfo';
 import { Info } from '../model/Info';
+import { Message } from '../model/Message';
 import { Vote } from '../model/Vote';
 
 @Injectable({

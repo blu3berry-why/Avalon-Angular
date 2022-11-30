@@ -1,0 +1,41 @@
+<div class="back">
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <form>
+        <h3>Login Here</h3>
+
+        <label for="username">Username</label>
+        <input type="text" placeholder="Email or Phone" id="username" [(ngModel)]="this.user.username" name="name">
+
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" id="password" [(ngModel)]="this.user.password" name="password">
+
+        <button id="btn-login"  (click)="login()">Log In</button>
+        <div class="social">
+          <div class="go"><i class="fab fa-google"></i>  Google</div>
+          <div class="fb"><i class="fab fa-facebook"></i>  Facebook</div>
+        </div>
+    </form>
+    <ng-container 
+    *ngIf="this.test == 'test message'; then serverUp; else serverDown">
+    </ng-container>
+
+    <ng-template #serverUp>
+        <div class="server-status">
+            <span (click)="getTest()" class="dot online" style="color: greenyellow;"></span>
+            <p>Online</p>
+        </div>
+      </ng-template>
+
+    <ng-template #serverDown>
+        <div class="server-status">
+            <span class="dot offline" style="color: orangered;"></span>
+            <p>Offline</p>
+        </div>
+      </ng-template>
+
+    
+
+</div>

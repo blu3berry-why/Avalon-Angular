@@ -1,0 +1,84 @@
+@media  (max-aspect-ratio: 16/9 ) {
+    .background {
+        background: url("https://cdn.discordapp.com/attachments/874320301356372078/880235496800915606/retarded_version.png");
+  background-size: cover;
+  background-position: center;
+
+  height: 100vh;
+    }    
+}
+
+@media  (min-aspect-ratio: 16/9 ) {
+    .background {
+        background: url("https://cdn.discordapp.com/attachments/874320301356372078/880235496800915606/retarded_version.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+
+    }    
+}
+
+input {
+    display: block;
+    border: none;
+    padding: 0;
+    width: 9ch;
+    background: repeating-linear-gradient(90deg, dimgrey 0, dimgrey 1ch, transparent 0, transparent 1.5ch) 0 100%/8.5ch 2px no-repeat;
+    font: 5ch droid sans mono, consolas, monospace;
+    letter-spacing: 0.5ch;
+  }
+  input:focus {
+    outline: none;
+    color: rgb(152, 0, 86);
+  }
+
+  .input-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    width: 15rem;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 3rem;
+  }
+
+  .background{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  button{
+    background-color: rgba(189, 4, 174, 0.52);
+    border: 3px solid rgb(107, 0, 73);
+    border-radius: 3rem;
+    padding: 0.5rem 1rem;
+    font-size: 1em;
+    font-weight: 700;
+    margin-top: 1rem;
+    box-shadow:  0 4px 8px 0 rgba(255, 255, 255, 0.73), 0 6px 20px 0 rgba(255, 255, 255, 0.715);
+  }
+
+  button:hover{
+    background-color: rgba(91, 0, 83, 0.52);
+    border: 3px solid rgb(73, 1, 50);
+    color: rgba(255, 255, 255, 0.6);
+    border-radius: 3rem;
+    padding: 0.5rem 1rem;
+    font-size: 1em;
+    font-weight: 700;
+    margin-top: 1rem;
+    box-shadow:  0 4px 8px 0 rgba(223, 123, 0, 0.73), 0 6px 20px 0 rgba(255, 255, 255, 0.715);
+  }
+
+  .btn-reconnect{
+    margin-left: 1rem;
+  }
