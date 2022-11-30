@@ -146,3 +146,12 @@ button {
   align-items: center;
   color: white;
 }
+
+
+.go{
+  text-decoration: line-through #f1a61c 3px;
+}
+
+.fb{
+  text-decoration: line-through #0246ac 3px;
+}

@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="lobby-code">
+    {{lobbyCode}}
+  </div>
+  <div class="users">
+    <div class="user-row" *ngFor="let user of users" >
+        {{user}}
+    </div>
+  </div>
+  <div class="buttons">
+    <button class="leave" (click)="leave()">Leave</button>
+    <button class="start" (click)="start()">Start Lobby</button>
+  </div>
+</div>
